@@ -1,0 +1,25 @@
+<!doctype html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <title>WebSession2API Bridge</title>
+    <style>
+      body { font-family: system-ui, -apple-system, sans-serif; width: 340px; margin: 0; padding: 14px; background: #0b0f17; color: #f1f5f9; }
+      h1 { font-size: 15px; margin: 0 0 4px; }
+      .sub { font-size: 12px; color: #94a3b8; margin: 0 0 12px; }
+      .status { padding: 8px 10px; border: 1px solid #1e293b; border-radius: 8px; background: #111723; font-size: 12px; margin-bottom: 12px; }
+      .row { display: flex; align-items: center; justify-content: space-between; padding: 7px 0; border-bottom: 1px solid #1e293b; font-size: 12px; }
+      .row:last-child { border-bottom: none; }
+      .meta { color: #94a3b8; font-size: 11px; }
+      .footer { margin-top: 12px; font-size: 11px; color: #64748b; }
+    </style>
+  </head>
+  <body>
+    <h1>WebSession2API Bridge</h1>
+    <p class="sub">Authorized local tab relay (no cookie export)</p>
+    <div id="bridge-status" class="status">Checking Native Messaging host...</div>
+    <div id="provider-list"></div>
+    <div class="footer">Extension ID: <code id="ext-id">—</code></div>
+    <script type="module" src="./popup.js"></script>
+  </body>
+</html>

@@ -1,0 +1,9 @@
+{
+  "name": "@websession2api/extension",
+  "version": "1.0.0",
+  "private": true,
+  "type": "module",
+  "scripts": {
+    "build": "tsx build.ts"
+  }
+}

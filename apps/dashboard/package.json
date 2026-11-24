@@ -1,0 +1,10 @@
+{
+  "name": "@websession2api/dashboard",
+  "version": "1.0.0",
+  "private": true,
+  "type": "module",
+  "scripts": {
+    "dev": "vite --config ../../vite.config.ts",
+    "build": "vite build --config ../../vite.config.ts"
+  }
+}

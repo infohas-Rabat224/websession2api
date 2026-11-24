@@ -1,0 +1,46 @@
+{
+  "manifest_version": 3,
+  "name": "WebSession2API Bridge",
+  "version": "1.0.0",
+  "description": "Connects user-authorized authenticated AI web sessions to the local WebSession2API gateway via Native Messaging without exporting cookies or credentials.",
+  "permissions": [
+    "nativeMessaging",
+    "storage",
+    "tabs"
+  ],
+  "host_permissions": [
+    "https://chat.deepseek.com/*",
+    "https://chat.z.ai/*",
+    "https://kimi.moonshot.cn/*",
+    "https://chat.qwen.ai/*",
+    "https://claude.ai/*",
+    "https://chatgpt.com/*",
+    "https://gemini.google.com/*"
+  ],
+  "background": {
+    "service_worker": "background/service-worker.js",
+    "type": "module"
+  },
+  "content_scripts": [
+    {
+      "matches": [
+        "https://chat.deepseek.com/*",
+        "https://chat.z.ai/*",
+        "https://kimi.moonshot.cn/*",
+        "https://chat.qwen.ai/*",
+        "https://claude.ai/*",
+        "https://chatgpt.com/*",
+        "https://gemini.google.com/*"
+      ],
+      "js": [
+        "content/index.js"
+      ],
+      "run_at": "document_idle"
+    }
+  ],
+  "action": {
+    "default_title": "WebSession2API Bridge",
+    "default_popup": "popup/popup.html"
+  },
+  "options_page": "options/options.html"
+}

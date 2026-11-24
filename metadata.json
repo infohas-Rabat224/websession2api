@@ -1,0 +1,6 @@
+{
+  "name": "WebSession2API",
+  "description": "Universal AI Web Session to Local API Gateway exposing OpenAI and Anthropic compatible endpoints with a Chrome MV3 extension, Native Messaging bridge, and developer control plane.",
+  "requestFramePermissions": [],
+  "majorCapabilities": ["MAJOR_CAPABILITY_SERVER_SIDE_GEMINI_API"]
+}
